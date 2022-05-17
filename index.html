@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ua">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Oleksandr Zadorozhnii">
+        <title>HomeWork 15</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+    </head>
+    <body>
+        <section class="section-first container-md mt-4 mb-5 shadow-sm">
+            <div class="row">
+                <div class="box-first col-md-12 col-lg-4 mt-2 mb-2 d-flex justify-content-start align-items-center">
+                    <img class="img-logo p-1 rounded-circle list-inline-item" src="img/logo.jpg" alt="logo">
+                    <div class="list-inline-item">
+                        <h1 class="box-first__h1">Nasty</h1>
+                        <h3 class="box-first__h3">news</h3>
+                    </div>
+                </div>
+                <div id="header-search" class="col-md-12 col-lg-4 mt-2 mb-2 d-flex justify-content-center align-items-center">
+                    <input type="text" name="search" id="search" onclick="openSearchPage()" class="form-control border-secondary" placeholder="Пошук">
+                    <div id="search-page" class="justify-content-center bg-secondary bg-opacity-75">
+                        <div id="search-block" class="d-flex align-items-start flex-column">
+                            <h3 class="text-danger">Сторінка пошуку:</h3>
+                            <input type="text" name="search" id="second-search" class="form-control border-secondary mt-3" placeholder="Пошук">
+                            <button class="close-search btn btn-danger mt-4" onclick="closeSearchPage()">Закрити</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4 mt-2 mb-2 d-flex justify-content-end align-items-center">
+                    <a class="btn btn-outline-secondary me-2" href="#">Головна</a>
+                    <a class="btn btn-outline-secondary me-2" href="#">Статті</a>
+                    <a class="btn btn-outline-secondary" href="#">Контакти</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-second container-md rounded-3">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="box-second col-md-12 col-lg-6 mt-2 mb-2">
+                    <h1 class="section-second__h1">Цікаві факти</h1>
+                    <p class="section-second__p">
+                        PHP — це зручна мова програмування високого рівня. 
+                        Не дивлячись на можливості застосування PHP в різноманітних галузях розробки, 
+                        його спеціалізація, зрештою це backend. 
+                        Хороший програміст вміє підібрати правильні інструменти виходячі із задачі, 
+                        а орієнтування PHP на веб-розробку робить його чудовим вибором для створення сайтів аба веб-сервісів. 
+                        Але не забувайте: мова програмування — це просто форма вираження, а зміст — це якість коду. 
+                        І зміст в цьому разі залежить не від мови, а від вашого досвіда та навичок!
+                    </p>
+                    <button class="btn btn-danger">Дізнатися більше</button>
+                </div>
+                <div class="col-md-12 col-lg-5 mt-2 mb-2">
+                    <img class="section-second__img rounded-3" src="img/php.png" alt="php">
+                </div>
+            </div>
+        </section>
+
+        <section class="section-third container-md">
+            <div class="row d-flex justify-content-between">
+                <div class="box-third p-3 col-md-12 col-lg-8">
+                    <h1 class="section-third__h1">Новини</h1>
+                    <div class="first-news-block row d-flex flex-wrap justify-content-around">
+                        <div class="card col-sm-12 col-md-5 mb-5 articles">
+                            <img src="img/news1.jpg" alt="foto" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title mb-4">Євросоюз має силу, щоб забезпечити це, впевнений український президент.</h5>
+                                <hr>
+                                <p class="card-text">
+                                    "Це як вивезти увесь Таллінн": Зеленський закликав естонців допомогти зупинити депортацію українців в Росію.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-warning">Дізнатися більше</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-sm-12 col-md-5 mb-5 articles">
+                            <img src="img/news2.jpg" alt="foto" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title mb-4">ЗСУ за добу знищили сім повітряних цілей військ РФ.</h5>
+                                <hr>
+                                <p class="card-text">
+                                    Українські військові за добу знищили сім повітряних цілей російських військ: літак, два вертольоти і чотири безпілотники, повідомило командування Повітряних сил Збройних сил України.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-warning">Дізнатися більше</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-sm-12 col-md-5 mb-5 articles">
+                            <img src="img/news3.jpg" alt="foto" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title mb-4">Президенти Польщі і країн Балтії відвідали Бородянку.</h5>
+                                <hr>
+                                <p class="card-text">
+                                    Президент Польщі Анджей Дуда та президенти Естонії Алар Каріс, Литви Гітанас Науседа та Латвії Егілс Левітс відвідали Бородянку у Київській області, яка сильно постраждала внаслідок російського вторгнення.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-warning">Дізнатися більше</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-sm-12 col-md-5 mb-5 articles">
+                            <img src="img/news4.jpg" alt="foto" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title mb-4">США виділяють ще 800 млн доларів на зброю для України: артилерію, бронетехніку, гелікоптери.</h5>
+                                <hr>
+                                <p class="card-text">
+                                    "Я щойно говорив з президентом Зеленським та розповів йому, що адміністрація надає додаткові 800 млн доларів допомоги у вигляді зброї, боєприпасів та іншої безпекової допомоги для України", - Джо Байден.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-warning">Дізнатися більше</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="second-news-block row  d-flex flex-wrap justify-content-around"></div>
+    
+                    <div class="third-news-block row  d-flex flex-wrap justify-content-around"></div>
+                    <div class="d-flex justify-content-center align-item-center">
+                        <button id="btn-add-news" class="btn btn-danger" onclick="addNews()">Більше новин</button>
+                    </div>
+    
+                </div>
+                <div class="box-fourth p-3 col-md-12 col-lg-4">
+                    <h1 class="section-third__h1">Анонси</h1>
+                    <div class="row d-flex flex-column">
+                        <div class="text col bg-light mb-4 p-4 rounded-3">
+                            <p class="card-text">
+                                До 30-ї річниці Незалежності України.<br><br>
+                                В оновлених виставкових залах Музею відкривається масштабна міжнародна виставка, у якій взяли участь 20 музеїв, архівів і бібліотек України та США.
+                            </p>
+                        </div>
+                        <div class="card col mb-4 bg-info">
+                            <div class="card-body box-fourth__card">
+                                <img src="img/announcement.jpg" alt="foto" class="card-img-top mb-4 box-fourth__img">
+                                <p class="card-text">         
+                                    Новий трейлер фільму MARVEL «Доктор Стрендж: У мультивсесвіті божевілля»
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-light">Дивитися</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer container-md mt-5 d-flex justify-content-center align-items-center">
+            <div>
+                Nasty news &copy; 2022 | Слава Україні 🇺🇦
+            </div>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script src="js/jquery3.6.0.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
